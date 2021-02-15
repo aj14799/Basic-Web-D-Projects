@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">     
+        <link rel="stylesheet" type="text/css" href="/dashstyle.css">
+    </head>
+    <body>
+
+    <div class="container-fluid">
+        <div clas="row">
+            <div class="col-md-12">
+                <h1>Dashboard</h1>                
+            </div>
+        </div>
+
+        <div clas="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        Stats
+                    </div>
+                    <div class = "card-body">
+                        <table class="table table-dark">
+                            <tr>
+                                <td>Total Stock </td>
+                                <td>Total Brands</td>
+                            </tr>
+                            <tr>
+                                {{#n1}}<td>{{sum}}</td>{{/n1}}
+                                {{#n2}}<td>{{count}}</td>{{/n2}}
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div clas="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        Stats
+                    </div>
+                    <div class = "card-body">
+                        <a href="/add" class="btn btn-primary">Add Medicine</a>
+                        <a class="btn btn-primary">Edit Medicine</a>
+                        <a href="/meds" class="btn btn-primary">Medicine List</a>
+                        <a class="btn btn-primary">Add Medicine</a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--
+       {{#n1}}<h1>{{sum}}</h1>{{/n1}}
+       {{#n2}}<h1>{{count}}</h1>{{/n2}}
+       -->
+    </body>
+</html>
